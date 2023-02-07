@@ -1,206 +1,35 @@
-/*
--- Query: SELECT * from alugueis
-LIMIT 0, 200
+-- Análise de Dados com SQL 
+-- Objetivos: decisão de investir baseado em um determinado filme (nota)
 
--- Date: 2023-02-06 22:36
-*/
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (1,41,8,NULL,'2018/10/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (2,10,29,'10','2017/03/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (3,108,45,'4','2018/06/08');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (4,39,66,'8','2018/10/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (5,104,15,'7','2019/03/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (6,50,71,'7','2018/10/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (7,52,21,NULL,'2018/11/10');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (8,73,65,'10','2018/06/05');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (9,78,2,NULL,'2017/09/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (10,121,43,NULL,'2017/11/08');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (11,61,61,NULL,'2017/06/04');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (12,52,65,'10','2018/06/29');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (13,34,58,'7','2017/05/14');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (14,8,29,NULL,'2018/08/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (15,13,5,'10','2017/11/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (16,59,59,NULL,'2018/08/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (17,22,46,'10','2019/02/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (18,36,39,'10','2019/03/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (19,99,12,NULL,'2018/09/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (20,73,32,NULL,'2018/09/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (21,30,60,'10','2018/02/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (22,19,35,NULL,'2017/05/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (23,46,6,'9','2018/04/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (24,57,41,'7','2018/08/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (25,66,49,'7','2017/08/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (26,118,27,'8','2018/12/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (27,7,36,NULL,'2019/03/14');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (28,113,40,'7','2018/04/05');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (29,102,66,'7','2018/07/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (30,65,47,'10','2017/11/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (31,29,64,NULL,'2018/11/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (32,8,42,'10','2019/02/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (33,111,63,'8','2018/07/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (34,52,14,'6','2018/09/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (35,91,7,'8','2019/03/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (36,87,19,NULL,'2017/12/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (37,92,37,NULL,'2018/05/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (38,108,62,'10','2018/09/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (39,25,52,NULL,'2018/08/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (40,39,27,'8','2019/03/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (41,70,57,'9','2018/05/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (42,31,43,'6','2019/02/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (43,109,35,NULL,'2019/01/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (44,62,52,'6','2019/01/04');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (45,12,10,'6','2019/04/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (46,105,12,'10','2018/05/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (47,72,67,NULL,'2018/05/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (48,57,25,NULL,'2018/06/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (49,117,15,NULL,'2019/03/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (50,29,23,NULL,'2018/08/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (51,94,60,NULL,'2018/02/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (52,103,70,NULL,'2018/10/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (53,3,23,NULL,'2019/03/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (54,47,42,'8','2019/03/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (55,66,37,NULL,'2018/04/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (56,81,6,'10','2018/12/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (57,25,29,'6','2018/04/05');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (58,56,50,'6','2019/05/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (59,41,44,'4','2017/09/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (60,99,14,NULL,'2018/04/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (61,89,57,'8','2018/04/23');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (62,76,45,'7','2019/04/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (63,94,49,'10','2018/12/10');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (64,28,7,'7','2018/03/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (65,61,29,'9','2018/11/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (66,111,34,NULL,'2017/09/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (67,42,21,NULL,'2019/03/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (68,21,6,'9','2017/06/29');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (69,18,16,'6','2019/03/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (70,10,44,NULL,'2017/12/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (71,111,1,'5','2018/07/21');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (72,63,66,'5','2018/12/31');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (73,103,33,'9','2017/09/04');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (74,13,34,'7','2017/06/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (75,26,70,NULL,'2017/11/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (76,112,10,NULL,'2018/08/31');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (77,99,8,NULL,'2017/08/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (78,31,13,'10','2018/08/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (79,35,69,'9','2017/07/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (80,72,64,NULL,'2017/09/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (81,114,30,'10','2019/02/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (82,74,29,NULL,'2019/02/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (83,120,61,'6','2018/08/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (84,82,12,NULL,'2018/03/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (85,95,63,'10','2017/12/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (86,121,19,'9','2018/10/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (87,64,63,NULL,'2019/04/24');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (88,114,16,NULL,'2018/05/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (89,25,8,NULL,'2018/11/29');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (90,86,9,'10','2018/09/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (91,118,40,'5','2018/09/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (92,112,47,'9','2019/03/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (93,54,2,'8','2018/11/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (94,91,54,NULL,'2018/11/23');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (95,107,49,'9','2019/02/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (96,97,4,'7','2018/01/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (97,35,58,'9','2017/06/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (98,93,40,'7','2018/12/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (99,96,36,'7','2019/04/21');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (100,33,18,'6','2018/08/23');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (101,62,36,NULL,'2019/03/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (102,92,66,'6','2018/08/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (103,46,36,'7','2017/09/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (104,100,29,'6','2019/03/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (105,91,62,'9','2018/11/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (106,27,7,NULL,'2019/02/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (107,24,36,NULL,'2019/04/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (108,31,33,NULL,'2018/10/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (109,21,1,NULL,'2018/07/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (110,67,31,NULL,'2018/12/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (111,113,24,'6','2018/02/04');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (112,21,30,'5','2018/09/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (113,49,51,'9','2018/02/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (114,85,36,'8','2019/02/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (115,13,44,'7','2019/02/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (116,57,56,'9','2019/02/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (117,84,53,NULL,'2018/10/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (118,35,31,'5','2017/10/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (119,27,21,'7','2019/03/08');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (120,116,50,NULL,'2018/07/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (121,38,49,'8','2017/12/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (122,26,19,NULL,'2018/05/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (123,77,25,'7','2018/12/10');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (124,107,6,NULL,'2018/06/14');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (125,52,16,'9','2018/08/10');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (126,53,57,'9','2019/04/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (127,46,25,NULL,'2018/01/04');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (128,44,14,NULL,'2019/04/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (129,107,49,'9','2018/10/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (130,71,40,'10','2019/04/24');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (131,92,19,NULL,'2018/11/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (132,90,22,NULL,'2019/03/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (133,26,24,'10','2018/11/29');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (134,67,52,NULL,'2018/12/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (135,88,34,NULL,'2019/04/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (136,108,25,'8','2017/11/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (137,121,32,NULL,'2018/09/07');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (138,55,59,NULL,'2018/03/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (139,74,46,'7','2018/05/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (140,92,52,NULL,'2019/01/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (141,54,63,'9','2019/02/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (142,19,53,NULL,'2019/02/09');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (143,62,63,NULL,'2019/02/07');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (144,94,61,'10','2017/12/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (145,109,10,'6','2019/02/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (146,95,34,'10','2017/09/05');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (147,58,64,'5','2018/06/27');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (148,114,52,NULL,'2019/01/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (149,49,46,NULL,'2017/06/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (150,64,40,NULL,'2018/12/14');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (151,26,23,'8','2017/12/25');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (152,97,63,NULL,'2017/07/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (153,113,8,NULL,'2018/01/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (154,79,23,'8','2018/06/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (155,78,26,'7','2018/07/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (156,76,62,NULL,'2018/12/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (157,66,46,'9','2017/04/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (158,25,12,NULL,'2019/03/14');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (159,73,56,'7','2018/08/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (160,64,32,'9','2019/02/20');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (161,46,10,'8','2018/07/13');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (162,92,36,'8','2018/01/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (163,80,3,NULL,'2019/03/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (164,94,23,'8','2017/09/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (165,88,69,NULL,'2019/03/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (166,100,17,NULL,'2018/07/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (167,100,39,'10','2018/04/07');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (168,61,41,NULL,'2017/10/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (169,65,38,'10','2018/02/11');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (170,36,1,'10','2018/10/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (171,25,40,NULL,'2019/03/24');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (172,49,41,'8','2017/10/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (173,118,39,NULL,'2018/09/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (174,28,29,NULL,'2018/07/03');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (175,38,47,'9','2018/06/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (176,84,3,NULL,'2019/02/15');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (177,102,64,'10','2018/12/06');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (178,121,70,'9','2019/01/28');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (179,49,51,'6','2019/04/30');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (180,79,35,'7','2018/07/16');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (181,112,18,NULL,'2018/03/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (182,92,46,NULL,'2018/11/26');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (183,120,35,'8','2019/03/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (184,25,10,'6','2019/01/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (185,55,27,NULL,'2018/03/08');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (186,109,62,'7','2019/01/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (187,7,44,'8','2018/06/23');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (188,89,26,NULL,'2017/08/02');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (189,99,49,'10','2018/11/12');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (190,63,55,'5','2018/12/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (191,58,26,'10','2019/04/08');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (192,22,14,NULL,'2018/12/22');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (193,55,15,NULL,'2018/02/01');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (194,103,67,NULL,'2017/11/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (195,21,26,NULL,'2017/12/19');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (196,98,50,'9','2019/01/31');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (197,38,53,NULL,'2018/11/05');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (198,15,69,'9','2018/11/18');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (199,111,20,NULL,'2017/08/17');
-INSERT INTO `` (`id_aluguel`,`id_cliente`,`id_filme`,`nota`,`data_aluguel`) VALUES (200,86,46,'3','2018/08/26');
+-- Indicadores: 
+-- Valor total de locações para definir a receita da empresa
+-- Média de avaliação(nota) dos filmes para definir a satisfação dos clientes
+-- Número de clientes ativos para definir o engajamento dos clientes 
+
+-- Selecionado as tabelas 
+SELECT * FROM alugueis;
+SELECT * FROM atores; 
+SELECT * FROM atuacoes;
+SELECT * FROM clientes;
+SELECT * FROM filmes;
+
+-- Analisar o preço médio de aluguel dos filmes por gênero 
+SELECT genero as 'Gênero', 
+	ROUND(avg(preco_aluguel), 2) AS 'Média de Preço do Aluguel', 
+    count(genero) as 'Quantidade de filmes por Gênero'
+from filmes
+group by genero;
+
+-- Analisar o preço médio predio de filmes com o lançamento igual a 2011
+SELECT genero,
+	ROUND(AVG(preco_aluguel), 2) as 'Média de Preços do Aluguel'
+from filmes
+WHERE ano_lancamento = 2011
+GROUP BY genero;
+
+-- Análise de desempenho dos aluguéis. Identificar quais aluguéis tiveram uma nota acima e abaixo da média 
+SELECT ROUND(AVG(nota), 2) from alugueis; -- Média 7.94
+
+SELECT * from alugueis
+WHERE nota >= (SELECT ROUND(AVG(nota), 2));
+
